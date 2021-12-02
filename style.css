@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&family=Poppins:wght@200;300;400&family=Work+Sans:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(27, 25, 25);
+ }
+
+ .conteiner{
+     width: 1200px;
+     margin: 20px auto;
+ }
+
+ .title{
+     color: #fff;
+     font-size: 48px;
+     font-weight: 700;
+     text-align: center;
+     margin: 15px;
+     padding-top:200px ;
+ }
+
+.sudtitle{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(211, 48, 0);
+
+}
+
+nav ul{
+    list-style-type: none;
+    position: relative;
+}
+
+nav ul li{
+    display: inline-block;
+    background-color: rgb(211, 48, 0);
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+nav a:hover{
+    background-color: rgb(27, 25, 25);
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+    
+}
+
+nav ul li:hover > ul{
+    display: inherit;
+
+}
+
+nav ul ul li{
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li{
+    position: relative;
+    left: 200px;
+}
+
+li>a::after{
+    content: "+";
+
+}
+
+li>a:only-child::after{
+    content: " ";
+}
+
+
+
+
